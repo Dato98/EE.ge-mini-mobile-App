@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Cards"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ბარათის ნომერი"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            android:textSize="25dp"/>
+
+        <Spinner
+            android:id="@+id/spExpM"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:entries="@array/exp_m"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YY"
+            android:textSize="25dp"/>
+
+        <Spinner
+            android:id="@+id/spExpY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:entries="@array/exp_Y"/>
+
+        <EditText
+            android:id="@+id/txtCVV"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:hint="CVV"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddCreditCard"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="დამატება"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"/>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <ListView
+        android:id="@+id/lvCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:dividerHeight="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"/>
+</LinearLayout>

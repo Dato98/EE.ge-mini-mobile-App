@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_main" android:title="მთავარი" android:icon="@drawable/ic_home" android:checkable="true"/>
+    <item android:id="@+id/nav_purchases" android:title="შესყიდული ნივთები" android:icon="@drawable/ic_buy" android:checkable="true"/>
+    <item android:id="@+id/nav_cards" android:title="ბარათები" android:icon="@drawable/ic_cards" android:checkable="true"/>
+    <item android:id="@+id/nav_settings" android:title="პარამეტრები" android:icon="@drawable/ic_settings" android:checkable="true"/>
+
+</menu>
